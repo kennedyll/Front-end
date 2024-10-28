@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{font-size: x-small;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #003580;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar nav .login {
+    padding: 8px 15px;
+    background-color: #0071c2;
+    border-radius: 5px;
+}
+
+/* Seção de Pesquisa */
+.search-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #0071c2;
+    color: #fff;
+}
+
+.search-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-form input,
+.search-form select {
+    width: 150px;
+}
+
+.search-form button {
+    background-color: #003580;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Seção de Destinos Populares */
+.destinations {
+    padding: 40px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #003580;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.destination-card {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.destination-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.destination-card h3 {
+    font-size: 18px;
+    color: #003580;
+    margin-top: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxionSync - Agência de Hospedagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header class="navbar">
+        <div class="logo">INNSIGHT</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Destinos</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#" class="login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Pesquisa -->
+    <section class="search-section">
+        <h1>Encontre sua hospedagem ideal</h1>
+        <form id="search-form" class="search-form">
+            <input type="text" id="hotel-name-input" placeholder="Digite o nome do hotel ou pousada">
+            <input type="date" required>
+            <input type="date" required>
+            <select id="region-select">
+                <option value="all">Todas as Regiões</option>
+                <option value="noronha">F.Noronha-PE</option>
+                <option value="natal">Natal-RN</option>
+                <option value="salvador">Salvador-BA</option>
+            </select>
+            <button type="button" onclick="filterDestinations()">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Seção de Destinos Populares -->
+    <section class="destinations">
+        <h2>Destinos Populares</h2>
+        <div id="destination-grid" class="destination-grid">
+            <div class="destination-card" data-region="natal" data-name="Hospedagem Cidade 1">
+                <img src="fotos/ponta negra 2.webp" alt="Cidade 1">
+                <h3>Ponta Negra Beach Praiano Flat</h3>
+            </div>
+            <div class="destination-card" data-region="noronha" data-name="Hospedagem Praia 1">
+                <img src="fotos/maga noronha.webp" alt="Praia 1">
+                <h3>Pousada Da Maga</h3>
+            </div>
+            <div class="destination-card" data-region="salvador" data-name="Hospedagem Campo 1">
+                <img src="fotos/praia mar.webp" alt="Campo 1">
+                <h3>Pirituba- PraiaMar Hotel</h3>
+            </div>
+            <div class="destination-card" data-region="natal" data-name="Hospedagem Cidade 2">
+                <img src="fotos/ponta negra.webp" alt="Cidade 2">
+                <h3>Moriah Natal Beach Hotel</h3>
+            </div>
+            <div class="destination-card" data-region="noronha" data-name="Hospedagem Praia 2">
+                <img src="fotos/cheiroverde.webp" alt="Praia 2">
+                <h3>Pousada Cheiro Verde</h3>
+            </div>
+            <div class="destination-card" data-region="salvador" data-name="Hospedagem Campo 2">
+                <img src="fotos/bahiamar.webp" alt="Campo 2">
+                <h3>Bahiamar Hotel</h3>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
